@@ -1,0 +1,81 @@
+.about {
+    width: 98vw; 
+    height: 80vh;
+    border-top: 1px solid rgb(215, 207, 207);
+    padding: 60px 10px;
+    position: relative; 
+    background: linear-gradient(rgba(80, 75, 75, 0.8), rgba(106, 102, 102, 0.8)), url('./logo_2.jpeg') no-repeat center  center/cover;
+color: white;
+  }
+  
+.about h1{
+    font-size: 1.9rem;
+    text-align: center;
+    text-align: center;
+}
+.about p{
+    margin-top: 5rem; 
+    text-align: justify;
+    padding: 0px 10%;
+    font-size: 1.2rem;
+}
+
+.about {
+    width: 98vw;
+    height: 83vh;
+    border-top: 1px solid rgb(215, 207, 207);
+    padding: 60px 10px;
+    position: relative;
+    background: linear-gradient(rgba(20, 19, 19, 0.6), rgba(58, 55, 55, 0.6)), url('./logo_2.jpg') no-repeat center center/cover;
+    background-repeat: no-repeat;
+    color: white; 
+    background-size: fixed;
+    
+    padding-bottom: 5rem;
+    background-color: red;
+  }
+  .about p:last-child{
+      margin-top: 2.3rem;
+    }
+  
+@media screen and (max-width: 480px) {
+    .about {
+      padding: 20px 10px;
+    }
+    .about h1 {
+      font-size: 1.2rem;
+    }
+    .about p {
+      margin-top: 1.5rem;
+      padding: 0px 2%;
+      font-size: 0.9rem;
+    }
+    .about p:last-child {
+      /* margin-top: 1rem; */
+      display: none;
+    }
+  }
+
+
+@media screen and (max-width: 768px) {
+    .about {
+      height: auto;
+      padding: 30px 10px;
+      width: 100%;
+    }
+    .about h1 {
+      font-size: 1.5rem;
+    }
+    .about p {
+      margin-top: 2rem;
+      padding: 0px 5%;
+      font-size: 1rem;
+    }
+    .about p:last-child {
+      margin-top: 1.5rem;
+      display: none;
+
+    }
+  }
+  
+  
