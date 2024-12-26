@@ -1,0 +1,233 @@
+
+
+.card-list {
+  /* background-color: red; */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  max-width: 100%;      
+  /* max-width: 750px; */
+  margin: 30px 30px;
+  /* padding: 60px 20px; */
+  gap: 5rem;    
+  /* margin-bottom: 1rem; */
+  /* animation: slideBottom 2s 1 ease-in-out; */
+  animation: slideBottom 2s;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20% ; 
+}
+@keyframes slideBottom {
+  from {
+    opacity: 0;
+    transform: translate(0, 100%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+.card-list .card-item {
+  background: #fff;
+   border-radius: 8px; 
+  /* box-shadow: 4px 5px 10px rgba(245, 13, 13, 0.04); */
+  box-shadow: 4px 5px 3px rgba(165, 27, 27, 0.04);
+  list-style: none;
+  cursor: pointer;
+  text-decoration: none;
+  /* transition: border 0.5s ease; */
+  border: 1px solid #a5a4a4;
+  color: #121213;
+  max-width: 100%;  
+  gap: 4rem;
+  height: 50vh;  
+
+}
+
+.card-list .card-item span:nth-child('even') {
+  background-color: red;
+}
+.services h1{
+  text-align: center;
+  font-size: 1.8rem;
+}
+.card-list  .card-item img {
+  width: 100%;
+  height: 100%;
+  /* aspect-ratio: 13/10; */
+  border-radius: 8px;
+  object-fit: fit;
+}
+
+.card-list span {
+  display: inline-block;
+  background: #F7DFF5;
+  margin-top: 10px;
+  padding: 8px 15px;
+  font-size: 0.75rem;
+  border-radius: 50px;
+  font-weight: 600;
+}
+
+hr {
+  margin: 0px 40px;
+}
+
+.card-list .designer {
+  background-color: #52e099;
+  color: #121213;
+}
+
+.card-list .editor {
+  background-color: #d6f8d6;
+  color: #205c20;
+}
+
+.card-item h4 {
+  color: #000;
+  font-size: 1.438rem;
+  margin-top: 10px;
+  font-weight: 400;
+}
+
+.card-item .arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* transform: rotate(-35deg); */
+  height: 40px;
+  width: 90px;
+  color: #000;
+  border: 1px solid #1581b7;
+  border-radius: 5%;
+  margin-top: 15px;
+  /* transition: 0.2s ease; */
+  /* animation: fade 2s ease-in-out infinite; */
+  position: relative;
+  bottom: 0px;
+  left: 0px;
+  z-index: 10;
+  color: #fff;
+  background-color: #4CAF50;
+  outline: none;
+  border: none;
+  /* background:linear-gradient(115deg ,  var(--primary-color), var(--secondory-color)); */
+  background-color: rgb(234, 4, 4);
+
+}
+@keyframes fade {
+  0% {
+    background-color: white;
+  }
+
+  50% {
+    background:linear-gradient(115deg ,  var(--primary-color), var(--secondory-color));
+    color: #fff;
+  }
+
+}
+
+.card-list .card-item:hover {
+  border: 1.7px solid var(--primary-color);
+  background: var(--secondory-color);
+  background: transparent;
+
+}
+
+.hide{
+  display: none;
+}
+@media (max-width: 1200px) {
+  .card-list {
+    margin: 20px 40px;
+  }
+  .card-item {
+    padding: 8px;
+  }
+}
+
+@media (max-width: 992px) {
+  .card-list {
+    /* grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); */
+    margin: 15px 20px;
+    /* grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); */
+
+  }
+  .card-item {
+    padding: 6px;
+  }
+  .card-list img {
+    height: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-list { 
+    /* grid-template-columns: repeat(2, 1fr); */
+    /* margin: 10px 10px;   */ 
+    gap: 0rem; 
+    margin-left: -1rem; 
+  }
+  .card-item {
+    padding: 4px;   
+    margin-bottom: 10px;
+  }
+  .card-list img {
+    
+    /* height: 50px;
+    width: 70px;     */ 
+    /* height: 250px; */ 
+  }
+  .pp{  
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    color: red;
+  }
+  .pp:first-child{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .hide{
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-list {
+      grid-template-columns: repeat(2, 1fr);
+      margin: 5px 5px;  
+    }
+    .card-list .card-item {
+      margin-bottom: 5px;
+      height:150px;
+      width: 150px; 
+    }
+    .card-list img {
+      /* height: 50px;  */  
+    width: 50%; 
+  }
+  .hide{
+    display: block;
+  }
+}
+@media (max-width: 320px) {
+  .card-list img {
+    height: 50px;
+    width: 50px;
+  }
+  .card-item h4 {
+    font-size: 1.1rem;
+  }
+}
+
+.pp{
+  font-weight: 550;
+  margin-left: 6%;
+  font-size: 1.2rem;
+  color: rgb(231, 17, 17);
+text-decoration:double;
+font-style: italic;
+}
+.pp:first-child{
+  margin-top: 2rem;
+}
